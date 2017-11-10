@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name" translatable="false">GistPub</string>
+    <string name="unknown_error">Unknown Error</string>
+
+    <string name="pleaseWait">Please wait…</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="try_again">Try again</string>
+    <string name="missing_info">Missing Information</string>
+    <string name="send">Send</string>
+    <string name="are_you_sure_to_logout">Are you sure to logout?</string>
+
+    <!-- Main Activity -->
+    <string name="text_your_gists">Your Gists</string>
+    <string name="text_starred_gists">Starred Gists</string>
+    <string name="text_search_gists">Search Gists</string>
+    <string name="text_followers">Followers</string>
+
+    <!-- Starred Gist -->
+    <string name="no_starred_gist">There is no Gist</string>
+
+    <!-- Login -->
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login">Login</string>
+    <string name="warning_empty_username">Please enter the username!</string>
+    <string name="warning_empty_password">Please enter the password!</string>
+    <string name="choose_login_type">Please choose a login type</string>
+    <string name="basic_auth" translatable="false">Basic Auth</string>
+    <string name="two_step_auth" translatable="false">Two Step Auth</string>
+    <string name="o_auth" translatable="false">OAuth</string>
+
+    <string name="username_extra" translatable="false">username</string>
+    <string name="password_extra" translatable="false">password</string>
+    <string name="error_extra" translatable="false">error</string>
+    <string name="preference_user_key" translatable="false">user_key</string>
+
+    <!-- File Download -->
+    <string name="success_file_download">File downloaded successfully</string>
+    <string name="error_file_download">Error while donwloading file</string>
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+    <string name="permission_write_external_storage_denied">You denied to write file permission. This is necessary to write the file</string>
+    <string name="permission_write_external_storage_neverask">Never ask again</string>
+    <string name="permission_write_external_storage_rationale">This permission is necessary to write the file</string>
+    <string name="goToLocation">Go To Location</string>
+</resources>
