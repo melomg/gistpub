@@ -8,6 +8,7 @@
     <string name="missing_info">Eksik Bilgi</string>
     <string name="send">Gönder</string>
     <string name="are_you_sure_to_logout">Çıkış yapmak istediğinizden emin misiniz?</string>
+    <string name="unconnected_network">Lütfen internete bağlı olduğunuzdan emin olunuz!</string>
 
     <!-- Main Activity -->
     <string name="text_your_gists">Senin Gistlerin</string>

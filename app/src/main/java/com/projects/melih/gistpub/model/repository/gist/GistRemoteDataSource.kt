@@ -3,7 +3,7 @@ package com.projects.melih.gistpub.model.repository.gist
 import android.arch.paging.DataSource
 import android.arch.paging.LivePagedListProvider
 import android.arch.paging.TiledDataSource
-import com.projects.melih.gistpub.liveviewmodel.YourGistsViewModel
+import com.projects.melih.gistpub.Constants
 import com.projects.melih.gistpub.model.Gist
 import com.projects.melih.gistpub.network.service.GitHubService
 import retrofit2.Response
@@ -50,7 +50,7 @@ abstract class GistTiledRemoteDataSource<T> protected constructor(val owner: Str
     override fun countItems(): Int = DataSource.COUNT_UNDEFINED
 
     override fun loadRange(startPosition: Int, loadCount: Int): List<T>? {
-        val response: Response<java.util.ArrayList<Gist>>? = dataProvider.getGists(owner, (startPosition / YourGistsViewModel.Companion.PAGED_LIST_PAGE_SIZE).toString(), loadCount.toString()).execute()
+        val response: Response<java.util.ArrayList<Gist>>? = dataProvider.getGists(owner, (startPosition / Constants.PAGED_LIST_PAGE_SIZE).toString(), loadCount.toString()).execute()
         return convertToItems(response?.body())
     }
 }

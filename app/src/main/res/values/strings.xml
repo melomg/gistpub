@@ -9,6 +9,7 @@
     <string name="missing_info">Missing Information</string>
     <string name="send">Send</string>
     <string name="are_you_sure_to_logout">Are you sure to logout?</string>
+    <string name="unconnected_network">Please make sure you are connected to internet!</string>
 
     <!-- Main Activity -->
     <string name="text_your_gists">Your Gists</string>
