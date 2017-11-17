@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/splash">
+
+    <TextView
+        android:id="@+id/chooseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_size"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:paddingTop="50dp"
+        android:text="@string/choose_login_type"
+        android:textSize="@dimen/high_text_size"
+        android:textStyle="bold|italic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/basicAuth"
+            style="@style/LoginType"
+            android:text="@string/basic_auth"/>
+
+        <Button
+            android:id="@+id/twoStepAuth"
+            style="@style/LoginType"
+            android:text="@string/two_step_auth"/>
+
+        <Button
+            android:id="@+id/oAuth"
+            style="@style/LoginType"
+            android:text="@string/o_auth"/>
+    </LinearLayout>
+</RelativeLayout>
