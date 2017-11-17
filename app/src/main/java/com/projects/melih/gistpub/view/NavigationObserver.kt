@@ -3,17 +3,20 @@ package com.projects.melih.gistpub.view
 import android.arch.lifecycle.Lifecycle
 import android.arch.lifecycle.LifecycleObserver
 import android.arch.lifecycle.OnLifecycleEvent
+import android.content.Context
 import android.support.annotation.IntDef
+
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
-import android.support.v7.widget.Toolbar
+import android.transition.TransitionInflater
+import android.transition.TransitionSet
 import com.projects.melih.gistpub.R
 
 /**
  * Created by melih on 10.11.2017.
  */
-class NavigationObserver(val lifecycle: Lifecycle, val supportFragmentManager: FragmentManager) : LifecycleObserver {
+class NavigationObserver(val lifecycle: Lifecycle, val supportFragmentManager: FragmentManager, val context: Context) : LifecycleObserver {
     private var transactionToRecord: FragmentTransaction? = null
 
     //consider using states
@@ -39,7 +42,7 @@ class NavigationObserver(val lifecycle: Lifecycle, val supportFragmentManager: F
 
     fun openFragmentAndClearStack(newFragment: Fragment, @NavigationObserver.Companion.SlideAnimType animType: Int) {
         clearBackStack()
-        replaceFragment(newFragment = newFragment, animType=animType)
+        replaceFragment(newFragment = newFragment, animType = animType)
     }
 
     fun openFragment(newFragment: Fragment, backStack: String?, @NavigationObserver.Companion.SlideAnimType animType: Int) {
@@ -57,26 +60,30 @@ class NavigationObserver(val lifecycle: Lifecycle, val supportFragmentManager: F
 
     private fun commit(isAdd: Boolean = true, fragmentId: Int, newFragment: Fragment, backStack: String?, addToBackStack: Boolean, @NavigationObserver.Companion.SlideAnimType animType: Int) {
         val transaction = supportFragmentManager.beginTransaction()
-        val currentFragment = supportFragmentManager.findFragmentById(fragmentId)
-        if (currentFragment != null) {
+        val previousFragment = supportFragmentManager.findFragmentById(fragmentId)
+        if (previousFragment != null) {
+            // Exit for Previous Fragment
+            val exitTransitionSet = TransitionSet()
+            // Enter Transition for New Fragment
+            val enterTransitionSet = TransitionSet()
+
             when (animType) {
                 NavigationObserver.LEFT_TO_RIGHT -> {
-                    transaction.setCustomAnimations(R.anim.fragment_slide_right_enter,
-                            R.anim.fragment_slide_left_exit,
-                            R.anim.fragment_slide_left_enter,
-                            R.anim.fragment_slide_right_exit)
+                    exitTransitionSet.addTransition(TransitionInflater.from(context).inflateTransition(android.R.transition.slide_left))
+                    enterTransitionSet.addTransition(TransitionInflater.from(context).inflateTransition(android.R.transition.slide_right))
                 }
                 NavigationObserver.BOTTOM_TO_TOP -> {
-                    transaction.setCustomAnimations(R.anim.fragment_slide_bottom_enter,
-                            R.anim.fragment_slide_top_exit,
-                            R.anim.fragment_slide_top_enter,
-                            R.anim.fragment_slide_bottom_exit)
+                    exitTransitionSet.addTransition(TransitionInflater.from(context).inflateTransition(android.R.transition.slide_top))
+                    enterTransitionSet.addTransition(TransitionInflater.from(context).inflateTransition(android.R.transition.slide_bottom))
                 }
                 NavigationObserver.NONE -> {
                 }
             }
-            transaction.hide(currentFragment)
+            previousFragment.exitTransition = exitTransitionSet
+            newFragment.enterTransition = enterTransitionSet
         }
+
+
         if (isAdd) {
             transaction.add(fragmentId, newFragment)
         } else {

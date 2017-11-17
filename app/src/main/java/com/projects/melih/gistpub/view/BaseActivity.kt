@@ -16,7 +16,7 @@ abstract class BaseActivity : AppCompatActivity(), NavigationListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        navigationObserver = NavigationObserver(lifecycle, supportFragmentManager)
+        navigationObserver = NavigationObserver(lifecycle, supportFragmentManager, this)
         lifecycle.addObserver(navigationObserver)
     }
 
