@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment
 import android.support.v7.widget.Toolbar
 
 /**
- * Created by melih on 16/07/2017.
+ * Created by melih on 16/07/2017
  */
 
 interface NavigationListener {

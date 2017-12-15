@@ -4,7 +4,7 @@ import android.os.Handler
 import com.projects.melih.gistpub.model.Gist
 
 /**
- * Created by melih on 24/09/2017.
+ * Created by melih on 24/09/2017
  */
 open class GistLocalDataSource {
     fun getRepositories(onRepositoryReadyCallback: OnRepoLocalReadyCallback) {

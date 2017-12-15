@@ -20,7 +20,7 @@
     <string name="no_starred_gist">Herhangi bir Gist bulunamadı</string>
 
     <!-- Login -->
-    <string name="username_hint">Kullanıcı Adı</string>
+    <string name="username_hint">Kullanıcı Adı veya E-Posta</string>
     <string name="password_hint">Şifre</string>
     <string name="login">Giriş Yap</string>
     <string name="warning_empty_username">Lütfen kullanıcı adı giriniz!</string>

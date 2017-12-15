@@ -21,7 +21,7 @@
     <string name="no_starred_gist">There is no Gist</string>
 
     <!-- Login -->
-    <string name="username_hint">Username</string>
+    <string name="username_hint">Username or Email</string>
     <string name="password_hint">Password</string>
     <string name="login">Login</string>
     <string name="warning_empty_username">Please enter the username!</string>

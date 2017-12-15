@@ -8,7 +8,7 @@ import android.os.StrictMode
 //import io.fabric.sdk.android.Fabric
 
 /**
- * Created by melih on 19/02/2017.
+ * Created by melih on 19/02/2017
  */
 
 open class GistPubApplication : Application() {

@@ -9,7 +9,7 @@ import com.projects.melih.gistpub.network.service.GitHubService
 import retrofit2.Response
 
 /**
- * Created by melih on 24/09/2017.
+ * Created by melih on 24/09/2017
  */
 open class GistRemoteDataSource {
 

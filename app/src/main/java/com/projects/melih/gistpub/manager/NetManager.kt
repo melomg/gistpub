@@ -4,10 +4,8 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkInfo
 
-
-
 /**
- * Created by melih on 24/09/2017.
+ * Created by melih on 24/09/2017
  */
 open class NetManager(private var applicationContext: Context) {
     val isConnectedToInternet: Boolean

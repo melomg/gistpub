@@ -8,7 +8,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 
 /**
- * Created by melihmg on 21/02/2017.
+ * Created by melihmg on 21/02/2017
  */
 
 public class Gist implements Parcelable {

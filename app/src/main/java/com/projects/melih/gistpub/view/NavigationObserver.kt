@@ -14,7 +14,7 @@ import android.transition.TransitionSet
 import com.projects.melih.gistpub.R
 
 /**
- * Created by melih on 10.11.2017.
+ * Created by melih on 10.11.2017
  */
 class NavigationObserver(val lifecycle: Lifecycle, val supportFragmentManager: FragmentManager, val context: Context) : LifecycleObserver {
     private var transactionToRecord: FragmentTransaction? = null

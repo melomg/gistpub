@@ -9,7 +9,7 @@ import com.bumptech.glide.request.target.Target
 import com.projects.melih.gistpub.R
 
 /**
- * Created by melih on 15.10.2017.
+ * Created by melih on 15.10.2017
  */
 
 fun ImageView.loadImage(url: String, listener: ImageListener) {

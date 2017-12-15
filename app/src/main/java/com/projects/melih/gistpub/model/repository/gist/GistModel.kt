@@ -9,7 +9,7 @@ import com.projects.melih.gistpub.network.service.ErrorMessage
 import com.projects.melih.gistpub.network.service.GitHubApi
 
 /**
- * Created by melih on 24/09/2017.
+ * Created by melih on 24/09/2017
  */
 open class GistModel(private val context: Context) {
     private val remoteDataSource = GistRemoteDataSource()

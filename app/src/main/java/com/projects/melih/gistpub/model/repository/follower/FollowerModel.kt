@@ -9,7 +9,7 @@ import com.projects.melih.gistpub.network.service.ErrorMessage
 import com.projects.melih.gistpub.network.service.GitHubApi
 
 /**
- * Created by melih on 15.10.2017.
+ * Created by melih on 15.10.2017
  */
 open class FollowerModel(private val context: Context) {
     private val remoteDataSource = FollowerRemoteDataSource()

@@ -5,7 +5,7 @@ import okhttp3.Response
 import java.io.IOException
 
 /**
- * Created by melihmg on 21/02/2017.
+ * Created by melihmg on 21/02/2017
  */
 
 open class AuthenticationInterceptor(private val authToken: String) : Interceptor {

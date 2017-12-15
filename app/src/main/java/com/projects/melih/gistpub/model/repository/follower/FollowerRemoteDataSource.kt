@@ -9,7 +9,7 @@ import retrofit2.Response
 import java.util.ArrayList
 
 /**
- * Created by melih on 24/09/2017.
+ * Created by melih on 24/09/2017
  */
 open class FollowerRemoteDataSource {
 
