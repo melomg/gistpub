@@ -1,0 +1,39 @@
+<resources>
+    <string name="unknown_error">Bilinmeyen Hata</string>
+
+    <string name="pleaseWait">Lütfen bekleyiniz…</string>
+    <string name="ok">Tamam</string>
+    <string name="cancel">İptal</string>
+    <string name="try_again">Tekrar Dene</string>
+    <string name="missing_info">Eksik Bilgi</string>
+    <string name="send">Gönder</string>
+    <string name="are_you_sure_to_logout">Çıkış yapmak istediğinizden emin misiniz?</string>
+    <string name="unconnected_network">Lütfen internete bağlı olduğunuzdan emin olunuz!</string>
+
+    <!-- Main Activity -->
+    <string name="text_your_gists">Senin Gistlerin</string>
+    <string name="text_starred_gists">Yıldızlı Gistlerin</string>
+    <string name="text_search_gists">Gist Ara</string>
+    <string name="text_followers">Takip Edenler</string>
+
+    <!-- Starred Gist -->
+    <string name="no_starred_gist">Herhangi bir Gist bulunamadı</string>
+
+    <!-- Login -->
+    <string name="username_hint">Kullanıcı Adı veya E-Posta</string>
+    <string name="password_hint">Şifre</string>
+    <string name="login">Giriş Yap</string>
+    <string name="warning_empty_username">Lütfen kullanıcı adı giriniz!</string>
+    <string name="warning_empty_password">Lütfen şifrenizi giriniz!</string>
+    <string name="choose_login_type">Lütfen giriş tipini seçiniz</string>
+
+    <!-- File Download -->
+    <string name="success_file_download">Dosya basarili bir sekilde indirildi</string>
+    <string name="error_file_download">Dosya indirilirken hata olustu</string>
+    <string name="button_allow">İzin Ver</string>
+    <string name="button_deny">Reddet</string>
+    <string name="permission_write_external_storage_denied">Dosyayi yazma iznini reddettiniz. Bu izin dosyayi kaydetmek icin gereklidir.</string>
+    <string name="permission_write_external_storage_neverask">Bir daha sorma</string>
+    <string name="permission_write_external_storage_rationale">Bu izin dosyayi yazmak icin gereklidir</string>
+    <string name="goToLocation">İndirilen dosyanın konumuna git</string>
+</resources>
